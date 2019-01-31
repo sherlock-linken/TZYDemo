@@ -28,6 +28,20 @@ public class MainActivity extends Activity {
         dataList.add("sherlock");
         dataList.add("linken");
 
+        /**
+         * 现在代码版本是2.1版本的一半
+         * 1010101010101010101
+         * 2929292929292929292
+         * 3838383838383838383
+         * 4747474747474747474
+         * 5656565656565656565
+         * 6565656565656565656
+         * 7474747474747474747
+         * 8383838383838383838
+         * 9292929292929292929
+         * 0101010101010101010
+         * */
+
         RecyclerView demoList = findViewById(R.id.rcy_demo_list);
         DataAdapter adapter = new DataAdapter();
         demoList.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
