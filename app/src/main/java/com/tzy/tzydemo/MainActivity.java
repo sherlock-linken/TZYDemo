@@ -1,6 +1,7 @@
 package com.tzy.tzydemo;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.FloatingActionButton;
@@ -14,19 +15,20 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.tzy.tzydemo.spanhtml.SpanAndHtmlActivity;
+
 import java.util.ArrayList;
 
 public class MainActivity extends Activity {
 
-    private ArrayList<String> dataList = new ArrayList<>();
+    private ArrayList<NameClassEntity> dataList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        dataList.add("sherlock");
-        dataList.add("linken");
+        dataList.add(new NameClassEntity("spanAndHtml", SpanAndHtmlActivity.class));
 
         /**
          * 现在代码版本是2.1已经开发完啦！哈哈哈
@@ -58,6 +60,16 @@ public class MainActivity extends Activity {
     }
 
 
+    private class NameClassEntity {
+        public String name;
+        public Intent intent;
+
+        public NameClassEntity(String name, Class clazz) {
+            this.name = name;
+            this.intent = new Intent(MainActivity.this, clazz);
+        }
+    }
+
     private class DataAdapter extends RecyclerView.Adapter<DemoItemViewHolder> {
 
         @NonNull
@@ -67,11 +79,18 @@ public class MainActivity extends Activity {
         }
 
         @Override
-        public void onBindViewHolder(@NonNull DemoItemViewHolder holder, int position) {
+        public void onBindViewHolder(@NonNull DemoItemViewHolder holder, final int position) {
 
-            String data = dataList.get(position);
+            final String data = dataList.get(position).name;
 
             holder.title.setText(data);
+
+            holder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    startActivity(dataList.get(position).intent);
+                }
+            });
 
 
         }
