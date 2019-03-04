@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="asbv">
+        <attr name="asbv_select_bg_color" format="color"/>
+        <attr name="asbv_select_text_color" format="color"/>
+        <attr name="asbv_normal_text_color" format="color"/>
+        <attr name="asbv_text_size" format="dimension"/>
+    </declare-styleable>
+
+</resources>

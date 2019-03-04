@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.tzy.tzydemo.sidebar.QuickLocationBarActivity;
 import com.tzy.tzydemo.spanhtml.SpanAndHtmlActivity;
 
 import java.util.ArrayList;
@@ -29,6 +30,8 @@ public class MainActivity extends Activity {
         setContentView(R.layout.activity_main);
 
         dataList.add(new NameClassEntity("spanAndHtml", SpanAndHtmlActivity.class));
+        dataList.add(new NameClassEntity("AlphabetSideBarActivity", QuickLocationBarActivity.class));
+
 
         /**
          * 现在代码版本是2.1已经开发完啦！哈哈哈
