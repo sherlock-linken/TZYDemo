@@ -8,4 +8,15 @@
         <attr name="asbv_text_size" format="dimension"/>
     </declare-styleable>
 
+    <declare-styleable name="RatingStarBarView">
+        <attr name="rsbv_star_focus_lv1" format="reference"/>
+        <attr name="rsbv_star_focus_lv2" format="reference"/>
+        <attr name="rsbv_star_focus_lv3" format="reference"/>
+        <attr name="rsbv_star_normal" format="reference"/>
+        <attr name="rsbv_star_height" format="dimension"/>
+        <attr name="rsbv_star_width" format="dimension"/>
+        <attr name="rsbv_default_value" format="integer"/>
+        <attr name="rsbv_clickable" format="boolean"/>
+    </declare-styleable>
+
 </resources>

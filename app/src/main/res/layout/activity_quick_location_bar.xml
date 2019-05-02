@@ -29,8 +29,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:asbv_select_bg_color="@color/test_color"
         app:asbv_select_text_color="@color/black"
-        app:asbv_normal_text_color="@color/test_color_2"
-        app:asbv_text_size="10dp"
+        app:asbv_normal_text_color="#333333"
+        app:asbv_text_size="14dp"
         />
 
     <include layout="@layout/item_letter_layout"/>

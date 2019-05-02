@@ -15,6 +15,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.tzy.tzydemo.phoneinfo.PhoneInfoTestActivity;
+import com.tzy.tzydemo.ratestarbar.RatingStarBarActivity;
 import com.tzy.tzydemo.sidebar.QuickLocationBarActivity;
 import com.tzy.tzydemo.spanhtml.SpanAndHtmlActivity;
 
@@ -31,6 +33,8 @@ public class MainActivity extends Activity {
 
         dataList.add(new NameClassEntity("spanAndHtml", SpanAndHtmlActivity.class));
         dataList.add(new NameClassEntity("AlphabetSideBarActivity", QuickLocationBarActivity.class));
+        dataList.add(new NameClassEntity("phoneInfo", PhoneInfoTestActivity.class));
+        dataList.add(new NameClassEntity("RatingStarBarActivity", RatingStarBarActivity.class));
 
 
         /**

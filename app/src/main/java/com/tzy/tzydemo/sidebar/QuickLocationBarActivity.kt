@@ -68,7 +68,7 @@ class QuickLocationBarActivity : Activity() {
             dataList.add(WordEntity(letter.toUpperCase(), it))
         }
 
-        Collections.sort(dataList)
+        dataList.sort()
 
         rcy_word_list.layoutManager = mLayoutManager
         rcy_word_list.adapter = mAdapter
@@ -104,10 +104,7 @@ class QuickLocationBarActivity : Activity() {
             }
 
         })
-
-
     }
-
 
     /**
      * 刷新 字母title

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ratestarbar.RatingStarBarActivity"
+    >
+
+
+    <com.tzy.tzydemo.ratestarbar.RatingStarBarView
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="100dp"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rsbv_default_value="3"
+        app:rsbv_star_focus_lv1="@drawable/sad"
+        app:rsbv_star_focus_lv2="@drawable/smile"
+        app:rsbv_star_focus_lv3="@drawable/happy"
+        app:rsbv_star_height="50dp"
+        app:rsbv_star_normal="@drawable/normal"
+        app:rsbv_star_width="50dp"
+        >
+
+    </com.tzy.tzydemo.ratestarbar.RatingStarBarView>
+
+</android.support.constraint.ConstraintLayout>
